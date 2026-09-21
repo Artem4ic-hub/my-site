@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техніка безпеки — Інформатика</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+    <div id="progress-bar" class="progress-bar"></div>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> ІнфоОсвіта
+        </div>
+      <nav>
+    <ul>
+        <li><a href="page1.html" class="nav-btn"><i class="fa-solid fa-graduation-cap"></i> Критерії</a></li>
+        <li><a href="page2.html" class="nav-btn active"><i class="fa-solid fa-shield-halved"></i> Безпека</a></li>
+        <li><a href="page3.html" class="nav-btn"><i class="fa-solid fa-scale-balanced"></i> Доброчесність</a></li>
+    </ul>
+    <div class="theme-switch-wrapper">
+        <i class="fa-solid fa-moon"></i>
+        <label class="theme-switch" for="themeToggle">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+        </label>
+        <i class="fa-solid fa-sun"></i>
+    </div>
+</nav>
+    </header>
+
+    <main>
+        <section class="glass-card">
+            <img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1200&q=80" alt="Комп'ютерний клас" class="hero-img">
+            <h1>ПРАВИЛА ТЕХНІКИ БЕЗПЕКИ В КОМП'ЮТЕРНОМУ КЛАСІ</h1>
+            
+            <div class="warning-box">
+                <i class="fa-solid fa-triangle-exclamation" style="font-size: 1.2rem; color: #ef4444;"></i> 
+                <div><strong>Увага!</strong> Обладнання комп'ютерного кабінету працює під напругою 220 В. Недотримання правил безпеки загрожує здоров'ю та життю!</div>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-box forbidden-box">
+                    <h2><i class="fa-solid fa-ban"></i> Суворо заборонено:</h2>
+                    <ul class="rules-list">
+                        <li><i class="fa-solid fa-xmark"></i> Торкатися роз'ємів, кабелів живлення та вилок.</li>
+                        <li><i class="fa-solid fa-xmark"></i> Вмикати та вимикати обладнання без дозволу вчителя.</li>
+                        <li><i class="fa-solid fa-xmark"></i> Торкатися тильної сторони монітора чи системного блоку.</li>
+                        <li><i class="fa-solid fa-xmark"></i> Класти сторонні речі на клавіатуру або системний блок.</li>
+                        <li><i class="fa-solid fa-xmark"></i> Працювати у вологому одязі або з вологими руками.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-box required-box">
+                    <h2><i class="fa-solid fa-circle-check"></i> Обов'язково виконувати:</h2>
+                    <ul class="rules-list">
+                        <li><i class="fa-solid fa-check"></i> Сидіти на відстані 60-70 см від екрану монітора.</li>
+                        <li><i class="fa-solid fa-check"></i> Зберігати правильну поставу (спина пряма).</li>
+                        <li><i class="fa-solid fa-check"></i> При появі запаху горілого вимкнути ПК і повідомити вчителя.</li>
+                        <li><i class="fa-solid fa-check"></i> Робити перерви для відпочинку очей кожні 15–20 хвилин.</li>
+                        <li><i class="fa-solid fa-check"></i> У разі погіршення самопочуття негайно повідомити вчителя.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Інтерактивні картки -->
+        <section class="glass-card">
+            <h2><i class="fa-solid fa-gamepad"></i> Натисніть на картку, щоб перевірити себе:</h2>
+            <div class="game-grid">
+                <div class="card-game" onclick="this.classList.toggle('flipped')">
+                    <div class="card-front"><i class="fa-solid fa-eye"></i><br>Відстань</div>
+                    <div class="card-back">Від очей до монітора має бути не менше 60-70 см.</div>
+                </div>
+                <div class="card-game" onclick="this.classList.toggle('flipped')">
+                    <div class="card-front"><i class="fa-solid fa-clock"></i><br>Час роботи</div>
+                    <div class="card-back">Безперервна робота за ПК для учнів — не більше 15-20 хв.</div>
+                </div>
+                <div class="card-game" onclick="this.classList.toggle('flipped')">
+                    <div class="card-front"><i class="fa-solid fa-user-ninja"></i><br>Постава</div>
+                    <div class="card-back">Спина рівна, ноги на підлозі під кутом 90°.</div>
+                </div>
+                <div class="card-game" onclick="this.classList.toggle('flipped')">
+                    <div class="card-front"><i class="fa-solid fa-triangle-exclamation"></i><br>Аварія</div>
+                    <div class="card-back">При поштовхах або баченні іскор — зупинити роботу і викликати вчителя!</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Навчальний портал з Інформатики. Всі права захищено.</p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="code.js"></script>
+</body>
+</html>

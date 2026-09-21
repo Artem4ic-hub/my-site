@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Критерії оцінювання — Інформатика</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+    <!-- Індикатор читання -->
+    <div id="progress-bar" class="progress-bar"></div>
+
+    <!-- ЄДИНА ШАПКА САЙТУ -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> ІнфоОсвіта
+        </div>
+       <nav>
+    <ul>
+        <li><a href="page1.html" class="nav-btn active"><i class="fa-solid fa-graduation-cap"></i> Критерії</a></li>
+        <li><a href="page2.html" class="nav-btn"><i class="fa-solid fa-shield-halved"></i> Безпека</a></li>
+        <li><a href="page3.html" class="nav-btn"><i class="fa-solid fa-scale-balanced"></i> Доброчесність</a></li>
+    </ul>
+    <!-- блок тумблера теми залишається нижче -->
+    <div class="theme-switch-wrapper">
+        <i class="fa-solid fa-moon"></i>
+        <label class="theme-switch" for="themeToggle">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+        </label>
+        <i class="fa-solid fa-sun"></i>
+    </div>
+</nav>
+    </header>
+
+    <main>
+        <!-- Головна картка з фотографією -->
+        <section class="glass-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Інформатика" class="hero-img">
+            <h1>КРИТЕРІЇ ОЦІНЮВАННЯ НАВЧАЛЬНИХ ДОСЯГНЕНЬ УЧНІВ З ІНФОРМАТИКИ</h1>
+            <p class="subtitle">у системі загальної середньої освіти</p>
+            <p>До навчальних досягнень учнів з інформатики, які підлягають оцінюванню, належать теоретична база знань та практичні навички роботи з сучасними інформаційними технологіями.</p>
+            
+            <h2><i class="fa-solid fa-layer-group"></i> Базові компоненти знань</h2>
+            
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-brain"></i> Теоретична база знань</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Уявлення про інформацію, її властивості, інформаційні процеси та інформаційні системи, загальні принципи розв'язування задач за допомогою комп'ютера з використанням програмного забезпечення загального та конкретно-предметного призначення, формулювання проблем і постановку задач, побудову відповідних інформаційних моделей, основи алгоритмізації і програмування, принципи будови та дії комп'ютера, уявлення про можливості використання глобальної мережі Інтернет, пошук потрібних відомостей.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <span><i class="fa-solid fa-keyboard"></i> Практичні навички</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="accordion-content">
+                    <p>Навички роботи з пристроями введення-виведення даних, прикладним програмним забезпеченням загального і навчального призначення — програмами технічного обслуговування апаратної складової, операційними системами, програмами для архівування файлів, антивірусними програмами, редакторами текстів, графічними редакторами, засобами підготовки комп'ютерних презентацій та публікацій, табличними процесорами, системами управління базами даних, інформаційно-пошуковими системами, експертними системами, мультимедійними комп'ютерними енциклопедіями, педагогічними програмними засобами для комп'ютерної підтримки навчання з різних предметів, програмами-браузерами для перегляду гіпертекстових сторінок, програмами для роботи з електронною поштою та телеконференціями, пошуку потрібних відомостей в глобальній мережі Інтернет, створення гіпертекстових сторінок тощо; навички складання, описування та реалізації найпростіших алгоритмів і програм з використанням різних засобів їх подання, зокрема деякої мови програмування.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таблиця рівнів із картками -->
+        <section class="glass-card">
+            <h2><i class="fa-solid fa-chart-line"></i> Рівні та критерії оцінювання</h2>
+            <p>Оцінювання якості підготовки здійснюється в двох аспектах: рівень володіння теоретичними знаннями та здатність до застосування вивченого матеріалу на практиці.</p>
+
+            <div class="levels-grid">
+                <div class="level-card">
+                    <span class="badge level-1">І. Початковий</span>
+                    <div class="score-item"><strong>1 бал:</strong> Розпізнає окремі об'єкти та дотримується ТБ.</div>
+                    <div class="score-item"><strong>2 бали:</strong> Фрагментарно відтворює знання про об'єкти.</div>
+                    <div class="score-item"><strong>3 бали:</strong> Елементарні знання без практичних навичок.</div>
+                </div>
+
+                <div class="level-card">
+                    <span class="badge level-2">ІІ. Середній</span>
+                    <div class="score-item"><strong>4 бали:</strong> Виконує завдання з допомогою вчителя.</div>
+                    <div class="score-item"><strong>5 балів:</strong> Відтворює значну частину навчального матеріалу.</div>
+                    <div class="score-item"><strong>6 балів:</strong> Самостійно відтворює матеріал за зразком.</div>
+                </div>
+
+                <div class="level-card">
+                    <span class="badge level-3">ІІІ. Достатній</span>
+                    <div class="score-item"><strong>7 балів:</strong> Застосовує знання у стандартних ситуаціях.</div>
+                    <div class="score-item"><strong>8 балів:</strong> Аналізує матеріал та самостійно виправляє помилки.</div>
+                    <div class="score-item"><strong>9 балів:</strong> Вільно володіє вивченим матеріалом та ПК.</div>
+                </div>
+
+                <div class="level-card">
+                    <span class="badge level-4">IV. Високий</span>
+                    <div class="score-item"><strong>10 балів:</strong> Глибокі знання, шукає додаткові джерела.</div>
+                    <div class="score-item"><strong>11 балів:</strong> Творче застосування у нестандартних задачах.</div>
+                    <div class="score-item"><strong>12 балів:</strong> Системні знання та високий рівень володіння ІТ.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Калькулятор оцінки -->
+        <section class="glass-card">
+            <h2><i class="fa-solid fa-calculator"></i> Інтерактивний калькулятор оцінки</h2>
+            <p style="margin-bottom: 1rem;">Введіть бали за теорію та практику, щоб розрахувати підсумкову оцінку та рівень:</p>
+            
+            <div class="calc-grid">
+                <div class="input-group">
+                    <label for="theoryScore">Оцінка за теорію (1–12):</label>
+                    <input type="number" id="theoryScore" min="1" max="12" placeholder="Наприклад: 9">
+                </div>
+                <div class="input-group">
+                    <label for="practiceScore">Оцінка за практику (1–12):</label>
+                    <input type="number" id="practiceScore" min="1" max="12" placeholder="Наприклад: 11">
+                </div>
+            </div>
+            
+            <button class="calc-btn" onclick="calculateGrade()"><i class="fa-solid fa-wand-magic-sparkles"></i> Розрахувати підсумок</button>
+            <div id="calcResult" class="calc-result" style="display: none;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Навчальний портал з Інформатики. Всі права захищено.</p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="code.js"></script>
+</body>
+</html>

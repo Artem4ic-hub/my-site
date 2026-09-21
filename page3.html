@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Академічна доброчесність — ІнфоОсвіта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+    <div id="progress-bar" class="progress-bar"></div>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-laptop-code"></i> ІнфоОсвіта
+        </div>
+        <nav>
+            <ul>
+                <li><a href="page1.html" class="nav-btn"><i class="fa-solid fa-graduation-cap"></i> Критерії</a></li>
+                <li><a href="page2.html" class="nav-btn"><i class="fa-solid fa-shield-halved"></i> Безпека</a></li>
+                <li><a href="page3.html" class="nav-btn active"><i class="fa-solid fa-scale-balanced"></i> Доброчесність</a></li>
+            </ul>
+
+            <div class="theme-switch-wrapper">
+                <i class="fa-solid fa-moon"></i>
+                <label class="theme-switch" for="themeToggle">
+                    <input type="checkbox" id="themeToggle" />
+                    <span class="slider"></span>
+                </label>
+                <i class="fa-solid fa-sun"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="glass-card">
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80" alt="Академічна доброчесність" class="hero-img">
+            <h1>АКАДЕМІЧНА ДОБРОЧЕСНІСТЬ В ІНФОРМАТИЦІ</h1>
+            <p class="subtitle">Чесність у навчанні, програмуванні та роботі з інформацією</p>
+            <p><strong>Академічна доброчесність</strong> — це сукупність етичних принципів та визначених законом правил, якими мають керуватися учасники освітнього процесу під час навчання, викладання та провадження наукової (творчої) діяльності з метою забезпечення довіри до результатів навчання.</p>
+
+            <h2><i class="fa-solid fa-triangle-exclamation"></i> Основні порушення доброчесності</h2>
+            
+            <div class="rules-grid">
+                <div class="rule-box forbidden-box">
+                    <h2><i class="fa-solid fa-user-ninja"></i> Плагіат та списування</h2>
+                    <ul class="rules-list">
+                        <li><i class="fa-solid fa-xmark"></i> <strong>Академічний плагіат:</strong> видання чужих текстів або програмного коду за власні.</li>
+                        <li><i class="fa-solid fa-xmark"></i> <strong>Списування:</strong> виконання письмових робіт із залученням зовнішніх джерел без дозволу.</li>
+                        <li><i class="fa-solid fa-xmark"></i> <strong>Фабрикація:</strong> вигадування даних чи результатів лабораторних робіт.</li>
+                    </ul>
+                </div>
+
+                <div class="rule-box required-box">
+                    <h2><i class="fa-solid fa-handshake"></i> Як навчатися чесно?</h2>
+                    <ul class="rules-list">
+                        <li><i class="fa-solid fa-check"></i> <strong>Вказувати джерела:</strong> завжди залишати посилання на авторів коду, статей чи фото.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Самостійність:</strong> вирішувати алгоритмічні задачі власноруч.</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>ШІ з розумом:</strong> використовувати штучний інтелект як порадника, а не генерувати ним готові домашні завдання.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Підсумковий тест по всіх сторінках -->
+        <section class="glass-card">
+            <h2><i class="fa-solid fa-square-check"></i> Підсумковий тест по всіх розділах сайту</h2>
+            <p style="margin-bottom: 1.5rem;">Дайте відповідь на 3 запитання, щоб перевірити свої знання з усіх тем:</p>
+
+            <div class="quiz-container">
+                <!-- Питання 1: Критерії оцінювання -->
+                <div class="quiz-question" style="margin-bottom: 1.5rem;">
+                    <p><strong>1. До якого рівня оцінювання належать бали 7, 8 та 9?</strong></p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q1" value="wrong"> Початковий рівень</label>
+                        <label><input type="radio" name="q1" value="wrong"> Середній рівень</label>
+                        <label><input type="radio" name="q1" value="correct"> Достатній рівень</label>
+                        <label><input type="radio" name="q1" value="wrong"> Високий рівень</label>
+                    </div>
+                </div>
+
+                <!-- Питання 2: Техніка безпеки -->
+                <div class="quiz-question" style="margin-bottom: 1.5rem;">
+                    <p><strong>2. Якою має бути мінімальна безпечна відстань від очей до монітора ПК?</strong></p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q2" value="wrong"> 20–30 см</label>
+                        <label><input type="radio" name="q2" value="correct"> 60–70 см</label>
+                        <label><input type="radio" name="q2" value="wrong"> 1,5–2 метри</label>
+                    </div>
+                </div>
+
+                <!-- Питання 3: Академічна доброчесність -->
+                <div class="quiz-question" style="margin-bottom: 1.5rem;">
+                    <p><strong>3. Ви використали чужий JS-код у своєму проекті. Що потрібно зробити за правилами доброчесності?</strong></p>
+                    <div class="quiz-options">
+                        <label><input type="radio" name="q3" value="wrong"> Змінити назви змінних і сказати, що код ваш</label>
+                        <label><input type="radio" name="q3" value="correct"> Залишити в коді посилання/коментар на автора та джерело</label>
+                        <label><input type="radio" name="q3" value="wrong"> Нічого не робити, головне — щоб сайт працював</label>
+                    </div>
+                </div>
+
+                <button class="calc-btn" onclick="checkFullQuiz()"><i class="fa-solid fa-check-double"></i> Перевірити підсумок тесту</button>
+                <div id="quizResult" class="calc-result" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Навчальний портал з Інформатики. Всі права захищено.</p>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="code.js"></script>
+</body>
+</html>
